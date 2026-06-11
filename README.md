@@ -5,7 +5,6 @@ Command-line tool for controlling SteamVR Base Stations (Lighthouse 2.0) via Blu
 ## Requirements
 
 - Python 3.10+
-- Linux (tested on Kali), Windows and macOS should work too
 - Bluetooth adapter with BLE support
 
 ```
@@ -57,3 +56,11 @@ Lighthouse 2.0 supports the following states over BLE:
 - Lighthouse 2.0 cannot be fully powered off via BLE — `standby` and `sleep` are the lowest reachable states wirelessly.
 - MAC addresses can be found with `python lhbctrl.py scan`.
 - Multiple MAC addresses can be passed to control several stations in one command.
+
+## Platform Support
+
+| Platform | Status |
+|----------|--------|
+| Linux | Tested |
+| Windows | Tested |
+| macOS | Not tested |
